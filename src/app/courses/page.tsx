@@ -2,6 +2,7 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import courseData from "@/data/music_courses.json";
+import Image from "next/image";
 
 interface Course {
   id: number;
@@ -38,7 +39,7 @@ function page() {
                 {course.description}
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
-                <img
+                <Image
                   src={course.image}
                   height="1000"
                   width="1000"
